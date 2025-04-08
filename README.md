@@ -1,92 +1,35 @@
-# 🛒 CARRINHO DE COMPRAS
+# Lojinha da Unidade
 
-📋 **Sumário**
+Este é um projeto simples sugerido como aprendizagem no curso superior em Ciências da Computação pela faculdade Gran Faculdade, um carrinho de compras desenvolvido com HTML, CSS e JavaScript. Ele permite que os usuários visualizem produtos, ajustem a quantidade de itens e vejam o subtotal atualizado dinamicamente.
 
-* [🔍 Visão Geral](#-visão-geral)
-* [🧱 Estrutura do Projeto](#-estrutura-do-projeto)
-* [✨ Funcionalidades](#-funcionalidades)
-* [🧩 Componentes](#-componentes)
-* [⚙️ Requisitos](#️-requisitos)
-* [🚀 Instalação e Uso](#-instalação-e-uso)
-* [💡 Exemplos de Uso](#-exemplos-de-uso)
+### Arquivos
 
+- **`index.html`**: Contém a estrutura principal da página, incluindo a tabela de produtos e o rodapé com o subtotal.
+- **`style.css`**: Define o estilo da página, como cores, fontes e layout.
+- **`funcoes.js`**: Contém as funções JavaScript responsáveis por alterar a quantidade de produtos e calcular o subtotal.
+- **`img/`**: Pasta que contém as imagens dos produtos.
 
-🔍 **Visão Geral**
+## Funcionalidades
 
-Este projeto implementa um carrinho de compras simples utilizando HTML, Bootstrap e JavaScript. Ele exibe uma lista de produtos com seus respectivos preços, quantidades e um subtotal calculado dinamicamente.  O objetivo é demonstrar a criação de uma interface básica de carrinho de compras.
+1. **Visualização de Produtos**:
+   - Cada produto é exibido com uma imagem, descrição, preço unitário, quantidade e total.
 
+2. **Alteração de Quantidade**:
+   - Botões de "+" e "-" permitem aumentar ou diminuir a quantidade de cada produto.
+   - A quantidade mínima é 0, e uma mensagem de alerta é exibida caso o usuário tente diminuir abaixo disso.
 
-🧱 **Estrutura do Projeto**
+3. **Cálculo Dinâmico do Subtotal**:
+   - O subtotal é atualizado automaticamente sempre que a quantidade de um produto é alterada.
 
-```
-CARRINHO DE COMPRAS/
-└── index.html
-```
+## Tecnologias Utilizadas
 
+- **HTML**: Estrutura da página.
+- **CSS**: Estilização da página.
+- **JavaScript**: Lógica para manipulação de DOM e cálculos.
 
-✨ **Funcionalidades**
+## Como Usar
 
-* **Exibição de Produtos:** Mostra uma tabela com informações dos produtos, incluindo nome, imagem, preço e quantidade.
-* **Cálculo do Subtotal:** Calcula e exibe o subtotal dos produtos no carrinho.
-
-
-🧩 **Componentes**
-
-* **Tabela de Produtos (`<table>`)**: Exibe os produtos em formato tabular, utilizando Bootstrap para estilização.  Cada linha da tabela representa um produto.
-* **Imagens dos Produtos (`<img>`)**:  Imagens dos produtos são exibidas dentro da tabela.
-* **Preço e Quantidade:**  Cada produto tem seu preço e quantidade exibidos.
-* **Subtotal (`<div id="subtotal">`)**:  Um elemento `div` com o id `subtotal` é usado para exibir o subtotal calculado.
-
-
-⚙️ **Requisitos**
-
-* Navegador Web moderno (Chrome, Firefox, Edge, Safari)
-
-
-🚀 **Instalação e Uso**
-
-1. **Faça o download do projeto:** Baixe a pasta `CARRINHO DE COMPRAS`.
-2. **Abra o arquivo `index.html`:** Abra o arquivo `index.html` em seu navegador web.
-
-
-💡 **Exemplos de Uso**
-
-**Visualizando o Carrinho:**
-
-Ao abrir o arquivo `index.html` em seu navegador, você verá a tabela de produtos com suas informações e o subtotal calculado.
-
-**Exemplo de código HTML (trecho de `index.html`):**
-
-```html
-<table>
-  <thead>
-    <tr>
-      <th>Produto</th>
-      <th>Preço</th>
-      <th>Quantidade</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="imagem_produto1.jpg" alt="Produto 1"> Produto 1</td>
-      <td>R$ 10,00</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <td><img src="imagem_produto2.jpg" alt="Produto 2"> Produto 2</td>
-      <td>R$ 20,00</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-<div id="subtotal">Subtotal: R$ 50,00</div>
-```
-
-**Explicação do código:**
-
-* A tabela (`<table>`) estrutura os dados dos produtos.
-* As imagens (`<img>`) exibem as imagens dos produtos.
-* O `id="subtotal"` permite a manipulação do conteúdo deste elemento via JavaScript (caso fosse implementada a atualização dinâmica do subtotal).  Neste exemplo, o valor é estático.
-
-
-Este README fornece uma descrição detalhada do projeto "CARRINHO DE COMPRAS".  Ele aborda a estrutura do projeto, suas funcionalidades, componentes principais e como utilizá-lo.  A inclusão de exemplos de código e explicações claras facilita a compreensão do projeto e seu funcionamento.
+1. Clone ou baixe este repositório.
+2. Abra o arquivo `index.html` em um navegador.
+3. Use os botões "+" e "-" para ajustar a quantidade de produtos.
+4. O subtotal será atualizado automaticamente no rodapé.
